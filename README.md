@@ -19,6 +19,10 @@ Before running the DeepSpeech 2 with LSTM Transducer.py, please make sure that `
 If not, please run:  
 `pip install torchaudio torch comet-ml`
 
+## 4. GPU Requirement
+I ran this script on Google Cloud GPU VM with the following detailed configurations. Please compare the information below with your server accordingly before running.
+![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/GPU.JPG)
+
 # Model Comparison
 ## 1. DeepSpeech2
 The diagram shows the architecture of DeepSpeech 2. It consists of 3 ResCNN Layer and 5 Bidirectional GRU Layer and a Connectionist Temporal Classification(CTC) Decoder.  

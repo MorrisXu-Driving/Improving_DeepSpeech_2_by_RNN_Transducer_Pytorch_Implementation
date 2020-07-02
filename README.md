@@ -20,7 +20,7 @@ If not, please run:
 `pip install torchaudio torch comet-ml`
 
 ## 4. GPU Requirement
-I ran this script on Google Cloud GPU VM with the following detailed configurations. Please compare the information below with your server accordingly before running.
+I ran this script on Google Cloud GPU VM with the following detailed configurations. Please compare the information below with your server accordingly before running.  
 ![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/GPU.JPG)
 
 # Model Comparison

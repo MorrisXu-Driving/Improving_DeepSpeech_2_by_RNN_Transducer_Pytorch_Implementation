@@ -21,8 +21,13 @@ If not, please run:
 
 # Model Comparison
 ## 1. DeepSpeech2
-![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/DEEPSPEECH2.JPG)
+The diagram shows the architecture of DeepSpeech 2. It consists of 3 ResCNN Layer and 5 Bidirectional GRU Layer and a Connectionist Temporal Classification(CTC) Decoder.  
+![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/DEEPSPEECH2.JPG)  
+The CTC Decoder assumes that **'every output is conditionally independent of the other outputs given the input'** which is not really true in sequence problems such as ASR and NLP. This results that the Char Error Rate(CER) for CTC based ASR System may be guaranteed, though, the Word Error Rate(WER) can not be guaranteed.  
 
+Therefore, in order to make past information available, RNN-Transducer is introduced.
+## 2. RNN-T VS CTC
+![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/CTC_VS_Transducer.JPG)
 
-## 2. RNN-Transducer based DeepSpeech 2
+## 3. RNN-Transducer based DeepSpeech 2
 ![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/Transducer.JPG)

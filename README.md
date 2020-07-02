@@ -27,7 +27,19 @@ The CTC Decoder assumes that **'every output is conditionally independent of the
 
 Therefore, in order to make past information available, RNN-Transducer is introduced.
 ## 2. RNN-T VS CTC
-![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/CTC_VS_Transducer.JPG)
+![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/CTC_VS_Transducer.JPG)  
+As the graph shows that, instead of merely focus on acoustic features/spectrogram x<sub>1</sub>-x<sub>T</sub>, the RNN-T also regard y<sub>u-1</sub> as its input. Moreover, RNN-T has one more **Prediction Network**, namely, Decoder compared with CTC, which learn the relationship between y<sub>u</sub> and y<sub>u-1</sub>
 
 ## 3. RNN-Transducer based DeepSpeech 2
-![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/Transducer.JPG)
+![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/Transducer.JPG)  
+This diagram shows the model architecture in this repository. Please read the code with this graph to have better understanding.
+
+# Result Comparison
+
+
+# Reference
+* [IMPROVING RNN TRANSDUCER MODELING FOR END-TO-END SPEECH RECOGNITION](https://arxiv.org/pdf/1909.12415.pdf)
+* [A Comparison of Sequence-to-Sequence Models for Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2017/pdfs/0233.PDF)
+* [warp-transducer with CUDA by @HawkAaron](https://github.com/HawkAaron/warp-transducer)
+* [Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://arxiv.org/pdf/1512.02595.pdf)
+

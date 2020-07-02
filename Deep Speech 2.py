@@ -470,6 +470,12 @@ def main(learning_rate=5e-4, batch_size=20, epochs=10,
         hparams['n_cnn_layers'], hparams['n_rnn_layers'], hparams['rnn_dim'],
         hparams['n_class'], hparams['n_feats'], hparams['stride'], hparams['dropout']
     ).to(device)
+     
+    # Model Initialization    
+    def init_weights(m):
+      if type(m) == nn.Linear or type(m) == nn.Conv2d:
+        torch.nn.init.xavier_uniform_(m.weight)
+    model.apply(init_weights)
 
     print(model)
     print('Num Model Parameters', sum([param.nelement() for param in model.parameters()]))

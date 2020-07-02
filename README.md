@@ -17,7 +17,7 @@ The following detailed installation can be found at https://github.com/HawkAaron
 ## 3. Other compulsory libraries
 Before running the DeepSpeech 2 with LSTM Transducer.py, please make sure that `comet_ml`,`torch`,`torchaudio` are installed. No version restriction.
 If not, please run:  
-`pip install torchaudio torch comet-ml
+`pip install torchaudio torch comet-ml`
 
 # Model Comparison
 ## 1. DeepSpeech2

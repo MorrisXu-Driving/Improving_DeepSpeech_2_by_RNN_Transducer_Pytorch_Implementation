@@ -4,6 +4,8 @@ In this repository, two different ASR Model will be compared in terms of converg
 # Installation
 ## 1. clone this repository
 `git clone https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer.git`  
+Then two .py files are under your project directory. The `Deep Speech 2.py` is an implementation of Deep Speech 2, an ASR Model based on DL, lauched in 2015.  
+The `DeepSpeech 2 with LSTM Transducer.py` is an implementation of improved Deep Speech 2 with RNN-Transudcer in Pytorch.
 
 ## 2. RNNT Loss Library Installation
 This library is developed by @HawkAaron. It is a RNNT Loss function with CUDA which accelerates the training process.    

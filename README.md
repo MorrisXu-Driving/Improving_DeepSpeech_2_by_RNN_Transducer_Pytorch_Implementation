@@ -55,7 +55,7 @@ This diagram shows the model architecture in this repository. Please read the co
 | 7| 0.188  | 0.184  |
 | 8| 0.186  | 0.176  |
 | 9| 0.184  | 0.172  |
-| 10| 0.185  | 0.168  |
+| 10| 0.185  | 0.171  |
 
 ## WER
 | Epoch | DeepSpeech2   | RNN-Transduced DeepSpeech2 |
@@ -64,12 +64,12 @@ This diagram shows the model architecture in this repository. Please read the co
 | 2| 0.832  |  0.641  |
 | 3| 0.718  | 0.592  |
 | 4| 0.634  | 0.551  |
-| 5| 0.587  | 0.508  |
-| 6| 0.549  | 0.476  |
-| 7| 0.540  | 0.451  |
-| 8| 0.534  | 0.437  |
-| 9| 0.529  | 0.428  |
-| 10| 0.527 | 0.423  |
+| 5| 0.587  | 0.538  |
+| 6| 0.549  | 0.514  |
+| 7| 0.540  | 0.497  |
+| 8| 0.534  | 0.489  |
+| 9| 0.529  | 0.484  |
+| 10| 0.527 | 0.479  |
 
 # Reference
 * [IMPROVING RNN TRANSDUCER MODELING FOR END-TO-END SPEECH RECOGNITION](https://arxiv.org/pdf/1909.12415.pdf)

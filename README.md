@@ -41,7 +41,33 @@ As the graph shows that, instead of merely focus on acoustic features/spectrogra
 This diagram shows the model architecture in this repository. Please read the code with this graph to have better understanding.
 
 # Result Comparison
+## CER
+| Epoch | DeepSpeech2   | RNN-Transduced DeepSpeech2 |
+| :------:| :-------------: | :-------------: |
+| 1| 0.432  | 0.407  |
+| 2| 0.327  | 0.308  |
+| 3| 0.274  | 0.312  |
+| 4| 0.223  | 0.294  |
+| 5| 0.207  | 0.257  |
+| 6| 0.192  | 0.201  |
+| 7| 0.188  | 0.184  |
+| 8| 0.186  | 0.176  |
+| 9| 0.184  | 0.172  |
+| 10| 0.185  | 0.168  |
 
+## WER
+| Epoch | DeepSpeech2   | RNN-Transduced DeepSpeech2 |
+| :------:| :-------------: | :-------------: |
+| 1| 0.992  |  0.650  |
+| 2| 0.832  |  0.641  |
+| 3| 0.718  | 0.592  |
+| 4| 0.634  | 0.551  |
+| 5| 0.587  | 0.508  |
+| 6| 0.549  | 0.476  |
+| 7| 0.540  | 0.451  |
+| 8| 0.534  | 0.437  |
+| 9| 0.529  | 0.428  |
+| 10| 0.527 | 0.423  |
 
 # Reference
 * [IMPROVING RNN TRANSDUCER MODELING FOR END-TO-END SPEECH RECOGNITION](https://arxiv.org/pdf/1909.12415.pdf)

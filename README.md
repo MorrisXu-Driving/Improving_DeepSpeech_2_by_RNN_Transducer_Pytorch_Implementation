@@ -31,7 +31,8 @@ The CTC Decoder assumes that **'every output is conditionally independent of the
 
 Therefore, in order to make past information available, RNN-Transducer is introduced.
 ## 2. RNN-T VS CTC
-<div align=center>![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/CTC_VS_Transducer.JPG)</div>
+<div align=center><img src="https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/CTC_VS_Transducer.JPG"></div>
+
 
 As the graph shows that, instead of merely focus on acoustic features/spectrogram x<sub>1</sub>-x<sub>T</sub>, the RNN-T also regard y<sub>u-1</sub> as its input. Moreover, RNN-T has one more **Prediction Network**, namely, Decoder compared with CTC, which learn the relationship between y<sub>u</sub> and y<sub>u-1</sub>
 

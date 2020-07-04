@@ -40,7 +40,7 @@ As the graph shows that, instead of merely focus on acoustic features/spectrogra
 
 ## 3. RNN-Transducer based DeepSpeech 2
 ![Image](https://github.com/MorrisXu-Driving/Improving_DeepSpeech_2_by_RNN_Transducer/blob/master/readme_img/Transducer.JPG)  
-This diagram shows the model architecture in this repository. Please read the code with this graph to have better understanding.
+This diagram shows the model architecture in this repository. Please read the code with this graph to have better understanding. The RNN-Transducer Structure consider not only  the input acoustic features but also the output labels from *t-1*.
 
 # Result Comparison
 ## CER

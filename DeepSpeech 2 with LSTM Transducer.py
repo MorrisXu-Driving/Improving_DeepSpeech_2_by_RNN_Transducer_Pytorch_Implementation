@@ -641,9 +641,10 @@ def main(learning_rate=5e-4, batch_size=32, epochs=10,
                 if type(m) == nn.GRU or type(m) == nn.LSTM:
                     torch.nn.init.orthogonal_(m.weight_ih_l0)
                     torch.nn.init.orthogonal_(m.weight_hh_l0)
-
     model.apply(init_weights)  # Initialize before start of training
-    #     model.load_state_dict(torch.load("rnnt.params"))
+    
+    # model.load_state_dict(torch.load("rnnt.params"))  # If the training is interrupted ,uncomment this line and comment the initialization to continue training
+    
     print(model)
     print('Num Model Parameters', sum([param.nelement() for param in model.parameters()]))
 
@@ -664,7 +665,7 @@ def main(learning_rate=5e-4, batch_size=32, epochs=10,
 if __name__ == '__main__':
 
     # Comet animation Initialization
-    comet_api_key = "TPMFZIHJifjKisoSVjhySBhsm"  # change api key !
+    comet_api_key = "TPMFZIHJifjKisoSVjhySBhsm"  # change your own api key. Otherwise, please set your own visulization procedure.
     project_name = "Improving Deep Speech 2 with RNN Transducer"
     experiment_name = "Improving Deep Speech 2 with RNN Transducer"
 

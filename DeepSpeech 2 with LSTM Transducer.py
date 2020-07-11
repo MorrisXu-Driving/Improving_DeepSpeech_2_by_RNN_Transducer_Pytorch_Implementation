@@ -327,7 +327,7 @@ class SpeechRecognitionModel(nn.Module):
         n_feats = n_feats // 2
         self.cnn = nn.Conv2d(1, 32, 3, stride=stride, padding=3 // 2)  # cnn for extracting heirachal features
 
-        # n residual cnn layers with filter size of 32
+        # n residual cnn layers with input channel and output channel equal to 32 and kernel size = (3,3)
         self.rescnn_layers = nn.Sequential(*[
             ResidualCNN(32, 32, kernel=3, stride=1, dropout=dropout, n_feats=n_feats)
             for _ in range(n_cnn_layers)

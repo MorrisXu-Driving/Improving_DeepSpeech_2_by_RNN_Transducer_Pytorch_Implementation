@@ -72,8 +72,8 @@ This diagram shows the model architecture in this repository. Please read the co
 | 10| 0.527 | 0.479  |
 
 # Reference
-* [IMPROVING RNN TRANSDUCER MODELING FOR END-TO-END SPEECH RECOGNITION](https://arxiv.org/pdf/1909.12415.pdf)
+* [Improving RNN Transducer Modeling for End-to-end Speech Recognition](https://arxiv.org/pdf/1909.12415.pdf)
 * [A Comparison of Sequence-to-Sequence Models for Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2017/pdfs/0233.PDF)
-* [warp-transducer with CUDA by @HawkAaron](https://github.com/HawkAaron/warp-transducer)
+* [Warp-transducer With CUDA by @HawkAaron](https://github.com/HawkAaron/warp-transducer)
 * [Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://arxiv.org/pdf/1512.02595.pdf)
 
